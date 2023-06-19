@@ -31,6 +31,9 @@ export default function ButtonsExample() {
         <Button variant="contained" disabled>
           Disabled
         </Button>
+        <Button variant="contained" color="secondary" disabled>
+          Disabled
+        </Button>
         <Button variant="contained" color="primary" href="#contained-buttons">
           Link
         </Button>
@@ -44,6 +47,7 @@ export default function ButtonsExample() {
         <Button color="primary">Primary</Button>
         <Button color="secondary">Secondary</Button>
         <Button disabled>Disabled</Button>
+        <Button disabled color="secondary">Disabled</Button>
         <Button color="primary" href="#text-buttons">
           Link
         </Button>
@@ -61,6 +65,9 @@ export default function ButtonsExample() {
           Secondary
         </Button>
         <Button variant="outlined" disabled>
+          Disabled
+        </Button>
+        <Button variant="outlined" color="secondary" disabled>
           Disabled
         </Button>
         <Button variant="outlined" color="primary" href="#outlined-buttons">
@@ -85,6 +92,14 @@ export default function ButtonsExample() {
         <Button
           variant="contained"
           disabled
+          color="primary"
+          startIcon={<KeyboardVoiceIcon />}
+        >
+          Talk
+        </Button>
+        <Button
+          variant="contained"
+          disabled
           color="secondary"
           startIcon={<KeyboardVoiceIcon />}
         >
@@ -103,6 +118,50 @@ export default function ButtonsExample() {
           color="primary"
           size="large"
           startIcon={<SaveIcon />}
+        >
+          Save
+        </Button>
+      </Box>
+      <Box sx={groupStyle}>
+        <Button
+          variant="contained"
+          color="secondary"
+          endIcon={<DeleteIcon />}
+        >
+          Delete
+        </Button>
+        <Button variant="contained" endIcon={<CloudUploadIcon />}>
+          Upload
+        </Button>
+        <Button
+          variant="contained"
+          disabled
+          color="primary"
+          endIcon={<KeyboardVoiceIcon />}
+        >
+          Talk
+        </Button>
+        <Button
+          variant="contained"
+          disabled
+          color="secondary"
+          endIcon={<KeyboardVoiceIcon />}
+        >
+          Talk
+        </Button>
+        <Button
+          variant="contained"
+          color="primary"
+          size="small"
+          endIcon={<SaveIcon />}
+        >
+          Save
+        </Button>
+        <Button
+          variant="contained"
+          color="primary"
+          size="large"
+          endIcon={<SaveIcon />}
         >
           Save
         </Button>

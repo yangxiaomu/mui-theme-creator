@@ -7,7 +7,7 @@ import MonacoThemeCodeEditor from "src/components/MonacoThemeCodeEditor";
 import { RootState } from "src/state/types";
 import ThemeTools from "./ThemeTools/ThemeTools";
 
-const drawerWidth: React.CSSProperties["width"] = 400
+const drawerWidth: React.CSSProperties["width"] = 600
 
 const ThemeConfigDrawer = () => {
   const themeId = useSelector((state: RootState) => state.themeId)

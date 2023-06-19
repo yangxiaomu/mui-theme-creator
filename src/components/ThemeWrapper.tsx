@@ -33,7 +33,7 @@ const ThemeWrapper = ({ children }: ThemeWrapperProps) => {
 const ThemeContainer = ({ children }: ThemeWrapperProps) => {
   return (
     <Paper sx={{
-      bgcolor: 'background.default',
+      bgcolor: '#F3F3F4',
       width: "100%",
       height: "100%",
     }} elevation={0} square>

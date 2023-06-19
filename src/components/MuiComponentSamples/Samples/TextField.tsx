@@ -1,8 +1,20 @@
-import { Box } from "@mui/material";
+import SearchIcon from '@mui/icons-material/Search';
+import { Box, FormControl, FormHelperText, IconButton, InputAdornment, OutlinedInput, Typography } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import React from "react";
 
 export default function TextFieldExample() {
+
+  const [showPassword, setShowPassword] = React.useState(false);
+
+  const handleClickShowPassword = () => setShowPassword((show) => !show);
+
+  const handleMouseDownPassword = (
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    event.preventDefault();
+  };
+  
   return (
     <Box component="form" sx={{
       "& > div > *": {
@@ -10,7 +22,7 @@ export default function TextFieldExample() {
         width: "25ch",
       },
     }} noValidate autoComplete="off">
-      <div>
+      {/* <div>
         <TextField
           required
           id="standard-required"
@@ -127,60 +139,58 @@ export default function TextFieldExample() {
           helperText="Some important text"
           variant="filled"
         />
-      </div>
+      </div> */}
       <div>
+      <Typography variant="h6" id="contained-buttons">
+        Standard
+      </Typography>
         <TextField
-          required
-          id="outlined-required"
-          label="Required"
-          defaultValue="Hello World"
+          id="outlined-search"
+          placeholder="テキスト"
+          helperText="4/64"
+        />
+        <TextField
+          id="outlined-search"
+          defaultValue="テキスト"
+          helperText="4/64"
+        />
+        <TextField
+          id="outlined-helperText-error"
+          error
+          defaultValue="テキストテキスト"
+          helperText="81/64"
         />
         <TextField
           disabled
           id="outlined-disabled"
-          label="Disabled"
-          defaultValue="Hello World"
+          defaultValue="テキスト"
+          helperText="4/64"
         />
-        <TextField
-          id="outlined-password-input"
-          label="Password"
-          type="password"
-          autoComplete="current-password"
-        />
-        <TextField
-          id="outlined-read-only-input"
-          label="Read Only"
-          defaultValue="Hello World"
-          InputProps={{
-            readOnly: true,
-          }}
-        />
-        <TextField
-          id="outlined-number"
-          label="Number"
-          type="number"
-          InputLabelProps={{
-            shrink: true,
-          }}
-        />
-        <TextField
-          id="outlined-search"
-          label="Search field"
-          type="search"
-        />
-        <TextField
-          id="outlined-helperText"
-          label="Helper text"
-          defaultValue="Default Value"
-          helperText="Some important text"
-        />
-        <TextField
-          id="outlined-helperText-error"
-          label="Error Helper text"
-          error
-          defaultValue="Default Value"
-          helperText="Some important text"
-        />
+      </div>
+      <div>
+      <Typography variant="h6" id="contained-buttons">
+        WithIcon
+      </Typography>
+      <FormControl sx={{ m: 1, width: "25ch" }} variant="outlined">
+          <OutlinedInput
+            id="outlined-adornment-password"
+            type={"text"}
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleClickShowPassword}
+                  onMouseDown={handleMouseDownPassword}
+                  edge="end"
+                >
+                  <SearchIcon />
+                </IconButton>
+              </InputAdornment>
+            }
+            // label="Password"
+            defaultValue="テキスト"
+          />
+        </FormControl>
       </div>
     </Box>
   )

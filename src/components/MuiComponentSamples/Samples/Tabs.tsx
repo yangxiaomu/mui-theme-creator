@@ -58,22 +58,22 @@ export default function TabsExample() {
           onChange={handleChange}
           aria-label="simple tabs example"
         >
-          <Tab label="Recents" {...a11yProps(0)} />
-          <Tab label="Favourites" {...a11yProps(1)} />
-          <Tab label="Nearby" {...a11yProps(2)} />
+          <Tab label="タブテキスト1" {...a11yProps(0)} />
+          <Tab label="タブテキスト2" {...a11yProps(1)} />
+          <Tab label="タブテキスト3" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        Item One
+        テキスト1
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+      テキスト2
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      テキスト3
       </TabPanel>
 
-      <Box position="static">
+      {/* <Box position="static">
         <Tabs
           value={value}
           onChange={handleChange}
@@ -92,7 +92,7 @@ export default function TabsExample() {
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
-      </TabPanel>
+      </TabPanel> */}
     </Box>
   )
 }

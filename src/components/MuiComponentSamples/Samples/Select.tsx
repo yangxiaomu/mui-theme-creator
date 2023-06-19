@@ -25,58 +25,9 @@ export default function SelectExample() {
   return (
     <div>
       <FormControl sx={styles.formControl}>
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
-        <Select
-          label="Age"
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={age}
-          onChange={handleChange}
-        >
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-      </FormControl>
-      <FormControl sx={styles.formControl}>
-        <InputLabel id="demo-simple-select-helper-label">Age</InputLabel>
-        <Select
-          label="Age"
-          labelId="demo-simple-select-helper-label"
-          id="demo-simple-select-helper"
-          value={age}
-          onChange={handleChange}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-        <FormHelperText>Some important helper text</FormHelperText>
-      </FormControl>
-      <FormControl sx={styles.formControl}>
-        <Select
-          value={age}
-          onChange={handleChange}
-          displayEmpty
-          sx={styles.selectEmpty}
-          inputProps={{ "aria-label": "Without label" }}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-        <FormHelperText>Without label</FormHelperText>
-      </FormControl>
-      <FormControl sx={styles.formControl}>
-        <InputLabel shrink id="demo-simple-select-placeholder-label-label">
-          Age
-        </InputLabel>
+        {/* <InputLabel shrink id="demo-simple-select-placeholder-label-label">
+          Default
+        </InputLabel> */}
         <Select
           labelId="demo-simple-select-placeholder-label-label"
           id="demo-simple-select-placeholder-label"
@@ -86,16 +37,37 @@ export default function SelectExample() {
           sx={styles.selectEmpty}
         >
           <MenuItem value="">
-            <em>None</em>
+            テキスト
           </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          <MenuItem value={10}>選択肢1</MenuItem>
+          <MenuItem value={20}>選択肢2</MenuItem>
+          <MenuItem value={30}>選択肢3</MenuItem>
         </Select>
-        <FormHelperText>Label + placeholder</FormHelperText>
+        {/* <FormHelperText>Label + placeholder</FormHelperText> */}
       </FormControl>
       <FormControl sx={styles.formControl} disabled>
-        <InputLabel id="demo-simple-select-disabled-label">Name</InputLabel>
+        {/* <InputLabel shrink id="demo-simple-select-placeholder-label-label">
+        Disabled
+        </InputLabel> */}
+        <Select
+          labelId="demo-simple-select-placeholder-label-label"
+          id="demo-simple-select-placeholder-label"
+          value={age}
+          onChange={handleChange}
+          displayEmpty
+          sx={styles.selectEmpty}
+        >
+          <MenuItem value="">
+            テキスト
+          </MenuItem>
+          <MenuItem value={10}>選択肢1</MenuItem>
+          <MenuItem value={20}>選択肢2</MenuItem>
+          <MenuItem value={30}>選択肢3</MenuItem>
+        </Select>
+        {/* <FormHelperText>Label + placeholder</FormHelperText> */}
+      </FormControl>
+      {/* <FormControl sx={styles.formControl} disabled>
+        <InputLabel shrink id="demo-simple-select-disabled-label">Name</InputLabel>
         <Select
           label="Name"
           labelId="demo-simple-select-disabled-label"
@@ -111,8 +83,8 @@ export default function SelectExample() {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
         <FormHelperText>Disabled</FormHelperText>
-      </FormControl>
-      <FormControl sx={styles.formControl} error>
+      </FormControl> */}
+      {/* <FormControl sx={styles.formControl} error>
         <InputLabel id="demo-simple-select-error-label">Name</InputLabel>
         <Select
           label="Name"
@@ -130,8 +102,29 @@ export default function SelectExample() {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
         <FormHelperText>Error</FormHelperText>
+      </FormControl> */}
+            <FormControl sx={styles.formControl} error>
+        {/* <InputLabel shrink id="demo-simple-select-placeholder-label-label">
+        Error
+        </InputLabel> */}
+        <Select
+          labelId="demo-simple-select-placeholder-label-label"
+          id="demo-simple-select-placeholder-label"
+          value={age}
+          onChange={handleChange}
+          displayEmpty
+          sx={styles.selectEmpty}
+        >
+          <MenuItem value="">
+            テキスト
+          </MenuItem>
+          <MenuItem value={10}>選択肢1</MenuItem>
+          <MenuItem value={20}>選択肢2</MenuItem>
+          <MenuItem value={30}>選択肢3</MenuItem>
+        </Select>
+        {/* <FormHelperText>Label + placeholder</FormHelperText> */}
       </FormControl>
-      <FormControl sx={styles.formControl}>
+      {/* <FormControl sx={styles.formControl}>
         <InputLabel id="demo-simple-select-readonly-label">Name</InputLabel>
         <Select
           label="Name"
@@ -149,8 +142,8 @@ export default function SelectExample() {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
         <FormHelperText>Read only</FormHelperText>
-      </FormControl>
-      <FormControl sx={styles.formControl}>
+      </FormControl> */}
+      {/* <FormControl sx={styles.formControl}>
         <InputLabel id="demo-simple-select-autowidth-label">Age</InputLabel>
         <Select
           label="Age  "
@@ -168,8 +161,8 @@ export default function SelectExample() {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
         <FormHelperText>Auto width</FormHelperText>
-      </FormControl>
-      <FormControl sx={styles.formControl}>
+      </FormControl> */}
+      {/* <FormControl sx={styles.formControl}>
         <Select
           value={age}
           onChange={handleChange}
@@ -185,8 +178,8 @@ export default function SelectExample() {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
         <FormHelperText>Placeholder</FormHelperText>
-      </FormControl>
-      <FormControl required sx={styles.formControl}>
+      </FormControl> */}
+      {/* <FormControl required sx={styles.formControl}>
         <InputLabel id="demo-simple-select-required-label">Age</InputLabel>
         <Select
           labelId="demo-simple-select-required-label"
@@ -203,8 +196,8 @@ export default function SelectExample() {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
         <FormHelperText>Required</FormHelperText>
-      </FormControl>
-      <FormControl variant="outlined" sx={styles.formControl}>
+      </FormControl> */}
+      {/* <FormControl variant="outlined" sx={styles.formControl}>
         <InputLabel id="demo-simple-select-outlined-label">Age</InputLabel>
         <Select
           labelId="demo-simple-select-outlined-label"
@@ -220,8 +213,8 @@ export default function SelectExample() {
           <MenuItem value={20}>Twenty</MenuItem>
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
-      </FormControl>
-      <FormControl variant="filled" sx={styles.formControl}>
+      </FormControl> */}
+      {/* <FormControl variant="filled" sx={styles.formControl}>
         <InputLabel id="demo-simple-select-filled-label">Age</InputLabel>
         <Select
           labelId="demo-simple-select-filled-label"
@@ -236,7 +229,7 @@ export default function SelectExample() {
           <MenuItem value={20}>Twenty</MenuItem>
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
-      </FormControl>
+      </FormControl> */}
     </div>
   )
 }

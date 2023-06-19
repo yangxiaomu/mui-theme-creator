@@ -25,6 +25,7 @@ import TextFieldExample from "./TextField"
 import TableExample from "./Table"
 import ListExample from "./List"
 import TooltipExample from "./Tooltip"
+import LinkExample from "./Link"
 
 // items skipped for now:
 // Button Group
@@ -34,6 +35,47 @@ import TooltipExample from "./Tooltip"
 
 // Alphabetically sorted list of all Material-UI component examples
 export default [
+  {
+    id: "Buttons",
+    title: "Buttons",
+    component: <ButtonExample />,
+    docs: "https://material-ui.com/components/buttons/",
+  },
+  {
+    id: "Link",
+    title: "Link",
+    component: <LinkExample />,
+  },
+  {
+    id: "Tabs",
+    title: "Tabs",
+    component: <TabsExample />,
+    docs: "https://material-ui.com/components/tabs/",
+  },
+  {
+    id: "Radio",
+    title: "Radio",
+    component: <RadioExample />,
+    docs: "https://material-ui.com/components/radio-buttons/",
+  },
+  {
+    id: "Checkboxes",
+    title: "Checkboxes",
+    component: <CheckboxesExample />,
+    docs: "https://material-ui.com/components/checkboxes/",
+  },
+  {
+    id: "TextField",
+    title: "TextField",
+    component: <TextFieldExample />,
+    docs: "https://material-ui.com/components/text-fields/",
+  },
+  {
+    id: "Select",
+    title: "Select",
+    component: <SelectExample />,
+    docs: "https://material-ui.com/components/selects/",
+  },
   {
     id: "Accordion",
     title: "Accordion",
@@ -65,29 +107,18 @@ export default [
     docs: "https://material-ui.com/components/bottom-navigation/",
   },
   {
-    id: "Buttons",
-    title: "Buttons",
-    component: <ButtonExample />,
-    docs: "https://material-ui.com/components/buttons/",
-  },
-  {
     id: "Card",
     title: "Card",
     component: <CardExample />,
     docs: "https://material-ui.com/components/cards/",
   },
-  {
-    id: "Checkboxes",
-    title: "Checkboxes",
-    component: <CheckboxesExample />,
-    docs: "https://material-ui.com/components/checkboxes/",
-  },
-  {
-    id: "Chip",
-    title: "Chip",
-    component: <ChipExample />,
-    docs: "https://material-ui.com/components/chips/",
-  },
+  
+  // {
+  //   id: "Chip",
+  //   title: "Chip",
+  //   component: <ChipExample />,
+  //   docs: "https://material-ui.com/components/chips/",
+  // },
   {
     id: "Dialog",
     title: "Dialog",
@@ -125,18 +156,6 @@ export default [
     docs: "https://material-ui.com/components/progress/",
   },
   {
-    id: "Radio",
-    title: "Radio",
-    component: <RadioExample />,
-    docs: "https://material-ui.com/components/radio-buttons/",
-  },
-  {
-    id: "Select",
-    title: "Select",
-    component: <SelectExample />,
-    docs: "https://material-ui.com/components/selects/",
-  },
-  {
     id: "Slider",
     title: "Slider",
     component: <SliderExample />,
@@ -166,18 +185,7 @@ export default [
     component: <TableExample />,
     docs: "https://material-ui.com/components/tables/",
   },
-  {
-    id: "Tabs",
-    title: "Tabs",
-    component: <TabsExample />,
-    docs: "https://material-ui.com/components/tabs/",
-  },
-  {
-    id: "TextField",
-    title: "TextField",
-    component: <TextFieldExample />,
-    docs: "https://material-ui.com/components/text-fields/",
-  },
+
   {
     id: "Tooltip",
     title: "Tooltip",
